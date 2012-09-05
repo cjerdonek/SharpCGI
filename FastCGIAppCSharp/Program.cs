@@ -4,12 +4,17 @@ using System.IO;
 using System.Globalization;
 using System.Text;
 
+using log4net;
+using log4net.Config;
+
 using FastCGI;
 
 namespace FastCGIApp
 {
     class Program
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+
         static void HandleRequest(Request request, Response response)
         {
             // receive HTTP content
@@ -45,6 +50,10 @@ namespace FastCGIApp
 
         static void Main(string[] args)
         {
+            XmlConfigurator.Configure();
+
+            log.Info("Starting: FastCGIApp");
+
             Options config = new Options();
             config.Bind = BindMode.CreateSocket;
             config.EndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9000);
