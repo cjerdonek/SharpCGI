@@ -50,9 +50,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastCGI">
-      <HintPath>..\FastCGI\bin\Release\FastCGI.dll</HintPath>
-    </Reference>
     <Reference Include="FSharp.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="log4net">
       <HintPath>..\ext\log4net.dll</HintPath>
@@ -93,6 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FastCGI\FastCGI.fsproj">
+      <Project>{4CF5DBA0-3AE1-4638-9B83-B66E285AB882}</Project>
+      <Name>FastCGI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
