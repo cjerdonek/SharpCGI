@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastCGIApp", "FastCGIApp.csproj", "{BD086D63-4B3E-43D2-902A-4FCB11A5A128}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FastCGI", "..\FastCGI\FastCGI.fsproj", "{4CF5DBA0-3AE1-4638-9B83-B66E285AB882}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{BD086D63-4B3E-43D2-902A-4FCB11A5A128}.Debug|x86.Build.0 = Debug|x86
 		{BD086D63-4B3E-43D2-902A-4FCB11A5A128}.Release|x86.ActiveCfg = Release|x86
 		{BD086D63-4B3E-43D2-902A-4FCB11A5A128}.Release|x86.Build.0 = Release|x86
+		{4CF5DBA0-3AE1-4638-9B83-B66E285AB882}.Debug|x86.ActiveCfg = Debug|x86
+		{4CF5DBA0-3AE1-4638-9B83-B66E285AB882}.Debug|x86.Build.0 = Debug|x86
+		{4CF5DBA0-3AE1-4638-9B83-B66E285AB882}.Release|x86.ActiveCfg = Release|x86
+		{4CF5DBA0-3AE1-4638-9B83-B66E285AB882}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
